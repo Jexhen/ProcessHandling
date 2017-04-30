@@ -1,22 +1,22 @@
 #ifndef _PROCESS_SCHEDULING_H_
 #define _PROCESS_SCHEDULING_H_
-#include "Type.h"
-#define WAIT 1//½ø³Ì×´Ì¬£º¾ÍĞ÷wait
-#define RUN 2//½ø³Ì×´Ì¬£ºÔËĞĞrun
-#define FINISH 3//½ø³Ì×´Ì¬£º½áÊøfinish
+#include "type.h"
+#define WAIT 1//è¿›ç¨‹çŠ¶æ€ï¼šå°±ç»ªwait
+#define RUN 2//è¿›ç¨‹çŠ¶æ€ï¼šè¿è¡Œrun
+#define FINISH 3//è¿›ç¨‹çŠ¶æ€ï¼šç»“æŸfinish
 
-/************ ¹«¹²½Ó¿Ú ****************/
+/************ å…¬å…±æ¥å£ ****************/
 
 /**
-* brief: ÓëÓÃ»§½»»¥µÄÖ÷½çÃæ£¬½ø³Ìµ÷¶ÈµÄÈë¿Ú
-* para:	wq¾ÍĞ÷¶ÓÁĞÖ¸Õë£¬fqÒÑÍê³É¶ÓÁĞÖ¸Õë
+* brief: ä¸ç”¨æˆ·äº¤äº’çš„ä¸»ç•Œé¢ï¼Œè¿›ç¨‹è°ƒåº¦çš„å…¥å£
+* para:	wqå°±ç»ªé˜Ÿåˆ—æŒ‡é’ˆï¼Œfqå·²å®Œæˆé˜Ÿåˆ—æŒ‡é’ˆ
 * return: void
 */
 extern void process_scheduling(Queue *wq, Queue *fq);
 
 /**
-* brief: Îö¹¹º¯Êı
-* para:	Queue ĞèÒªÏú»ÙµÄ¶ÓÁĞ
+* brief: ææ„å‡½æ•°
+* para:	Queue éœ€è¦é”€æ¯çš„é˜Ÿåˆ—
 * return: void
 */
 extern void destroy(Queue *wq, Queue *fq);
