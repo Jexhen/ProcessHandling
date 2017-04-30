@@ -8,20 +8,6 @@
 /************ 公共接口 ****************/
 
 /**
-* brief: 批量产生进程，并插入就绪队列
-* para:	wq就绪队列指针
-* return: void
-*/
-extern void generate_processes();
-
-/**
-* brief: 每次调度实时监测打印
-* para:	wq就绪队列指针，rp当前运行进程，fq已完成队列指针
-* return: int类型的队列长度
-*/
-extern void print(Queue *wq, PCB *rp, Queue * fq);
-
-/**
 * brief: 与用户交互的主界面，进程调度的入口
 * para:	wq就绪队列指针，fq已完成队列指针
 * return: void
